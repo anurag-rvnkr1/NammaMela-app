@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeFragment"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/profileFragment"
+            android:icon="@drawable/ic_seats"
+            android:title="@string/my_bookings" />
+        <item
+            android:id="@+id/fanWallFragment"
+            android:icon="@drawable/ic_fan_wall"
+            android:title="@string/fan_wall" />
+    </group>
+
+    <item android:title="@string/account">
+        <menu>
+            <item
+                android:id="@+id/profileFragment_account"
+                android:icon="@drawable/ic_profile"
+                android:title="@string/profile" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+</menu>

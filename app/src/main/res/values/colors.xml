@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Brand Colors -->
+    <color name="primary">#E50914</color>
+    <color name="primary_soft">#33E50914</color>
+    <color name="primary_dark">#B20710</color>
+    <color name="accent_gold">#FFD700</color>
+
+    <!-- Backgrounds -->
+    <color name="background_dark">#0F0F0F</color>
+    <color name="card_background">#1C1C1E</color>
+    <color name="glass_white">#1AFFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_high_emphasis">#FFFFFF</color>
+    <color name="text_medium_emphasis">#BDBDBD</color>
+    <color name="text_low_emphasis">#757575</color>
+
+    <!-- Status Colors -->
+    <color name="seat_available">#3E3E3E</color>
+    <color name="seat_selected">#FFD700</color>
+    <color name="seat_locked">#FF8C00</color>
+    <color name="seat_booked">#E50914</color>
+
+    <!-- Shimmer Colors -->
+    <color name="shimmer_base">#2C2C2C</color>
+    <color name="shimmer_highlight">#3D3D3D</color>
+
+    <!-- Compatibility with existing code -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="theatre_dark">#0F0F0F</color>
+    <color name="theatre_gold">#FFD700</color>
+    <color name="theatre_red">#E50914</color>
+    <color name="theatre_accent">#FF4500</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#BDBDBD</color>
+    <color name="theatre_dark_grey">#1C1C1E</color>
+</resources>

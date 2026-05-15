@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.nammamela.ui.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_seatsFragment"
+            app:destination="@id/seatsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_dramaDetailsFragment"
+            app:destination="@id/dramaDetailsFragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/fade_in"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_up" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/seatsFragment"
+        android:name="com.example.nammamela.ui.SeatsFragment"
+        android:label="Seats"
+        tools:layout="@layout/fragment_seats">
+        <argument
+            android:name="dramaId"
+            app:argType="integer" />
+        <argument
+            android:name="dramaTitle"
+            app:argType="string" />
+        <argument
+            android:name="showTimingId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_seatsFragment_to_bookingFragment"
+            app:destination="@id/bookingFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="com.example.nammamela.ui.BookingFragment"
+        android:label="Booking"
+        tools:layout="@layout/fragment_booking">
+        <argument
+            android:name="dramaId"
+            app:argType="integer" />
+        <argument
+            android:name="selectedSeatIds"
+            app:argType="integer[]" />
+        <argument
+            android:name="showTimingId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/castFragment"
+        android:name="com.example.nammamela.ui.CastFragment"
+        android:label="Cast"
+        tools:layout="@layout/fragment_cast" />
+
+    <fragment
+        android:id="@+id/fanWallFragment"
+        android:name="com.example.nammamela.ui.FanWallFragment"
+        android:label="Fan Wall"
+        tools:layout="@layout/fragment_fan_wall" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.nammamela.ui.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_bookingDetailsFragment"
+            app:destination="@id/bookingDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookingDetailsFragment"
+        android:name="com.example.nammamela.ui.BookingDetailsFragment"
+        android:label="Booking Details"
+        tools:layout="@layout/fragment_booking_details">
+        <argument
+            android:name="bookingId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dramaDetailsFragment"
+        android:name="com.example.nammamela.ui.DramaDetailsFragment"
+        android:label="Drama Details"
+        tools:layout="@layout/fragment_drama_details">
+        <argument
+            android:name="dramaId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_dramaDetailsFragment_to_seatsFragment"
+            app:destination="@id/seatsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+</navigation>

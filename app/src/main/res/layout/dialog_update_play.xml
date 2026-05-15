@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/et_drama_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Drama Name"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/et_drama_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Duration (e.g. 2h 30m)"
+        android:textColor="@color/black" />
+
+</LinearLayout>

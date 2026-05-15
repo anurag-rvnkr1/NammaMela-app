@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NammaMela" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand colors. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/primary_dark</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+
+        <item name="colorSecondary">@color/accent_gold</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="colorSurface">@color/card_background</item>
+        <item name="colorOnSurface">@color/text_high_emphasis</item>
+
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="android:statusBarColor">@color/background_dark</item>
+        <item name="android:navigationBarColor">@color/background_dark</item>
+
+        <!-- Shape appearance -->
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.NammaMela.Large</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.NammaMela.Medium</item>
+    </style>
+
+    <style name="Theme.NammaMela" parent="Base.Theme.NammaMela" />
+
+    <style name="ShapeAppearance.NammaMela.Medium" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="ShapeAppearance.NammaMela.Large" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <!-- Custom Button Styles -->
+    <style name="Widget.NammaMela.Button" parent="Widget.Material3.Button">
+        <item name="shapeAppearance">@style/ShapeAppearance.NammaMela.Medium</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="Widget.NammaMela.Button.Primary" parent="Widget.NammaMela.Button">
+        <item name="backgroundTint">@color/primary</item>
+    </style>
+</resources>
