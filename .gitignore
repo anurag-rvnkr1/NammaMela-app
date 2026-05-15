@@ -1,0 +1,103 @@
+# Built application files
+*.apk
+*.aab
+*.ap_
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+build/
+app/build/
+
+# Gradle files
+.gradle/
+local.properties
+
+# Android Studio files
+.idea/
+*.iml
+captures/
+.navigation/
+
+# Log Files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Keystore files
+*.jks
+*.keystore
+
+# Firebase / Google Services backup files
+google-services.json.backup
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# NDK
+.externalNativeBuild/
+.cxx/
+
+# Kotlin
+.kotlin/
+
+# IntelliJ
+workspace.xml
+tasks.xml
+usage.statistics.xml
+dictionaries/
+
+# Mac
+*.swp
+
+# Windows
+desktop.ini
+
+# Cache files
+.cache/
+tmp/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# Android profiling
+*.hprof
+
+# Exclude large media files if needed
+# Uncomment below if upload size becomes too large
+
+# *.mp4
+# *.mov
+# *.zip
+# *.rar
+# *.psd
+# *.ai
+
+# Exclude local environment configs
+.env
+
+# Exclude signing configs
+signingConfigs/
+
+# Firebase cache
+.firebase/
+
+# Node modules (if React Native / hybrid setup)
+node_modules/
+
+# Package lock files (optional)
+package-lock.json
+yarn.lock
